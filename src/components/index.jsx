@@ -11,7 +11,4 @@ class App extends Component {
   }
 }
 
-App.propTypes = {
-}
-
 export default App

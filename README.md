@@ -1,14 +1,14 @@
 # Boilerplate-react-readux-webpack2
 Proyect React and Redux with es6 and Webpack 2
 
-##Installation
+## Installation
 ```shell
   $ git@github.com:jersonbetin/Boilerplate-react-readux-webpack2.git
   $ cd Boilerplate-react-readux-webpack2
   $ npm install
 ```
 
-##Technologies
+## Technologies
 * **[webpack](https://webpack.js.org)** : webpack is a module bundler for modern JavaScript applications.
 
 * **[redux](http://redux.js.org/):** Redux is a predictable state container for JavaScript apps. 

@@ -26,6 +26,15 @@ module.exports = {
   },
   module: {
     rules: [
+      {
+        enforce: 'pre',
+        test: /\.jsx?$/,
+        exclude: /node_modules/,
+        loader: "eslint-loader",
+        options: {
+          emitError: true,
+        }
+      },
      //configuracion del babel loaders
       {
         //tipos de archivos en donde el loader va a trabajar js, jsx
@@ -58,6 +67,17 @@ module.exports = {
     ],
   },
   plugins: [
+    new webpack.LoaderOptionsPlugin({
+      options: {
+        eslint:
+        {
+          failOnWarning: false,
+          failOnError: false,
+          fix: false,
+          quiet: false,
+        },
+      },
+    }),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NamedModulesPlugin(),
     new webpack.NoEmitOnErrorsPlugin(),
